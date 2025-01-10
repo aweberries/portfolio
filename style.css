@@ -63,11 +63,23 @@ section::before {
 
     display: grid;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 10px;
     box-shadow: 0px 5px 0px #0000009a;
 
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.384);
+}
+
+/* */
+
+.end {
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 0px 5px 0px #0000007e;
+    line-height: 25px;
+    isolation: isolate;
+    color: rgb(255, 227, 166);
 }
