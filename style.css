@@ -5,7 +5,7 @@ body {
 }
 
 section {
-    height: 100vh;
+    height: fit-content;
     display: grid;
     position: relative;
 }
@@ -21,24 +21,36 @@ section::before {
     opacity: 0.15;
 }
 
+/* Introduction */
+
 .introduction {
     padding: 15px;
-    font-size: 25px;
     text-align: center;
     text-shadow: 0px 5px 0px #0000007e;
-    line-height: 20px;
+    line-height: 0px;
     isolation: isolate;
-    color: rgb(255, 227, 166);
 }
+
+.introductionTitle {
+    font-size: 50px;
+    color: rgb(255, 227, 166)
+}
+
+.introductionDescription {
+    font-size: 20px;
+    color: white;
+}
+
+/* About Me */
 
 .aboutme {
     padding: 15px;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     text-shadow: 0px 5px 0px #0000007e;
-    line-height: 25px;
+    line-height: 5px;
     isolation: isolate;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 227, 166);
 }
 
 .question {
@@ -46,13 +58,16 @@ section::before {
     font-size: 20px;
     text-align: center;
     text-shadow: 0px 5px 0px #0000007e;
-    line-height: 25px;
+    line-height: 15px;
     isolation: isolate;
 
+    display: grid;
+    margin: auto;
+    margin-bottom: 15px;
     border: none;
     border-radius: 10px;
     box-shadow: 0px 5px 0px #0000009a;
 
-    color: rgb(255, 227, 166);
+    color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.384);
 }
