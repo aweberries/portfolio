@@ -1,1 +1,1 @@
-# portfolio
+# This portfolio is mainly meant for the eyes of employers.
