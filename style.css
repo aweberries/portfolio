@@ -15,7 +15,7 @@ section::before {
     position: absolute;
     inset: 0;
 
-    background-image: url(images/blendershowcase.png);
+    background-image: url();
     background-size: cover;
     background-position: center;
     opacity: 0.15;
@@ -26,63 +26,24 @@ section::before {
 .introduction {
     padding: 15px;
     text-align: center;
-    text-shadow: 0px 3px 0px #0000007e;
-    line-height: 0px;
-    isolation: isolate;
+    text-shadow: 0 3px 0 #0000007e;
+    line-height: 0;
 }
 
-.introductionTitle {
+.introduction-title {
     font-size: 50px;
     color: rgb(255, 227, 166)
 }
 
-.introductionDescription {
+.introduction-description {
     font-size: 20px;
     color: white;
 }
 
-/* About Me */
+/* Portfolio */
 
-.aboutme {
+.portfolio-grid {
     padding: 15px;
-    font-size: 20px;
-    text-align: center;
-    text-shadow: 0px 3px 0px #0000007e;
-    line-height: 5px;
-    isolation: isolate;
-    color: rgb(255, 227, 166);
-}
-
-.aboutme > button {
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-    text-shadow: 0px 3px 0px #0000007e;
-    line-height: 15px;
-    isolation: isolate;
-
-    display: grid;
-    margin: auto;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 3px 0px #0000009a;
-
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.384);
-}
-
-.full-portfolio {
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-    text-shadow: 0px 3px 0px #0000007e;
-    line-height: 5px;
-    isolation: isolate;
-    color: rgb(255, 227, 166);
-}
-
-.portfolio-button {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -93,19 +54,84 @@ section::before {
     };
 }
 
-.portfolio-button > button {
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
-    text-shadow: 0px 3px 0px #0000007e;
-    line-height: 15px;
-    height: 150px;
-    width: 300px;
+.card {
+    height: 200px;
+    width: 350px;
+    position: relative;
     isolation: isolate;
 
     border: none;
     border-radius: 5px;
-    box-shadow: 0px 3px 0px #0000009a;
+    box-shadow: 0 3px 0 #0000009a;
+
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+.card-content {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 3px 0 #0000007e;
+    line-height: 20px;
+
+    color: rgb(255, 255, 255);
+}
+
+.card-image {
+    width: 100%;
+    height: 65%;
+    
+    position: absolute;
+    object-fit: cover;
+
+    opacity: 0.25;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-header {
+    font-size: 25px;
+    text-align: left;
+    margin: 0;
+    isolation: isolate;
+}
+
+.card-paragraph {
+    font-size: 20px;
+    margin: 112px 0 0 0;
+    isolation: isolate;
+}
+
+.card:hover {
+    .card-image {
+        opacity: 1;
+        transition: 0.15s;
+    };
+
+    
+}
+
+/* About Me */
+
+.about-me-header {
+    padding: 15px 0 0 0;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0 3px 0 #0000007e;
+    line-height: 5px;
+    color: rgb(255, 227, 166);
+}
+
+.about-me > button {
+    padding: 15px;
+    font-size: 20px;
+    text-shadow: 0 3px 0 #0000007e;
+    line-height: 15px;
+
+    display: grid;
+    margin: auto auto 8px auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0 #0000009a;
 
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.384);
@@ -115,8 +141,7 @@ section::before {
     padding: 15px;
     font-size: 15px;
     text-align: center;
-    text-shadow: 0px 3px 0px #0000007e;
+    text-shadow: 0 3px 0 #0000007e;
     line-height: 25px;
-    isolation: isolate;
     color: rgb(255, 227, 166);
 }
