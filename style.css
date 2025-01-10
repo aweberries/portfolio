@@ -1,7 +1,7 @@
 body {
-    font-family: Tahoma;
+    font-family: Segoe UI;
     margin: 0;
-    background: black;
+    background: rgb(41, 41, 41);
 }
 
 section {
@@ -26,7 +26,7 @@ section::before {
 .introduction {
     padding: 15px;
     text-align: center;
-    text-shadow: 0px 5px 0px #0000007e;
+    text-shadow: 0px 3px 0px #0000007e;
     line-height: 0px;
     isolation: isolate;
 }
@@ -41,23 +41,43 @@ section::before {
     color: white;
 }
 
+.apps {
+    margin: 30px;
+    margin-left: 500px;
+    margin-right: 500px;
+
+    box-sizing: border-box;
+    padding: 16px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+    gap: 16px;
+}
+
+.apps > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* About Me */
 
 .aboutme {
     padding: 15px;
     font-size: 20px;
     text-align: center;
-    text-shadow: 0px 5px 0px #0000007e;
+    text-shadow: 0px 3px 0px #0000007e;
     line-height: 5px;
     isolation: isolate;
     color: rgb(255, 227, 166);
 }
 
-.question {
+.aboutme > button {
     padding: 15px;
     font-size: 20px;
     text-align: center;
-    text-shadow: 0px 5px 0px #0000007e;
+    text-shadow: 0px 3px 0px #0000007e;
     line-height: 15px;
     isolation: isolate;
 
@@ -65,8 +85,8 @@ section::before {
     margin: auto;
     margin-bottom: 10px;
     border: none;
-    border-radius: 10px;
-    box-shadow: 0px 5px 0px #0000009a;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #0000009a;
 
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.384);
@@ -78,7 +98,7 @@ section::before {
     padding: 15px;
     font-size: 15px;
     text-align: center;
-    text-shadow: 0px 5px 0px #0000007e;
+    text-shadow: 0px 3px 0px #0000007e;
     line-height: 25px;
     isolation: isolate;
     color: rgb(255, 227, 166);
