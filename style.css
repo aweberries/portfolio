@@ -41,26 +41,6 @@ section::before {
     color: white;
 }
 
-.apps {
-    margin: 30px;
-    margin-left: 500px;
-    margin-right: 500px;
-
-    box-sizing: border-box;
-    padding: 16px;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 100px;
-    gap: 16px;
-}
-
-.apps > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 /* About Me */
 
 .aboutme {
@@ -92,7 +72,44 @@ section::before {
     background-color: rgba(0, 0, 0, 0.384);
 }
 
-/* */
+.full-portfolio {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0px 3px 0px #0000007e;
+    line-height: 5px;
+    isolation: isolate;
+    color: rgb(255, 227, 166);
+}
+
+.portfolio-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    @media (min-width: 450px) {
+        grid-template-columns: repeat(3, minmax(150px, max-content));
+        justify-content: center;
+    };
+}
+
+.portfolio-button > button {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0px 3px 0px #0000007e;
+    line-height: 15px;
+    height: 150px;
+    width: 300px;
+    isolation: isolate;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #0000009a;
+
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.384);
+}
 
 .end {
     padding: 15px;
