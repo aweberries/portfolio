@@ -97,7 +97,7 @@ section::before {
 
     margin: 0;
     isolation: isolate;
-    
+
     text-shadow: 0 3px 0 #0000007e;
 }
 
@@ -151,5 +151,5 @@ section::before {
     line-height: 25px;
 
     color: rgb(255, 227, 166);
-    text-shadow: 0 5px 0 #0000007e;
+    text-shadow: 0 3px 0 #0000007e;
 }
