@@ -15,16 +15,20 @@ section::before {
     position: absolute;
     inset: 0;
 
-    background-image: url();
+    background-image: url(images/HighresScreenshot00004.png);
     background-size: cover;
     background-position: center;
-    opacity: 0.15;
+    background-attachment: fixed;
+
+    opacity: 0.7;
 }
 
 /* Introduction */
 
 .introduction {
-    padding: 15px;
+    padding: 35px;
+    isolation: isolate;
+
     text-align: center;
     line-height: 0;
 }
@@ -46,6 +50,7 @@ section::before {
 
 .portfolio-grid {
     padding: 15px;
+
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -65,7 +70,7 @@ section::before {
     border: none;
     border-radius: 5px;
 
-    background-color: rgba(0, 0, 0, 0.384);
+    background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease-out;
 }
 
@@ -86,7 +91,7 @@ section::before {
     position: absolute;
     object-fit: cover;
 
-    opacity: 0.25;
+    opacity: 1;
     border-radius: 5px 5px 0 0;
     transition: all 0.2s ease-out;
 }
@@ -110,6 +115,7 @@ section::before {
 
 .card:hover {
     box-shadow: 0 0 10px;
+    background-color: rgba(0, 0, 0, 0.75);
 
     .card-image {
         opacity: 1;
@@ -118,8 +124,12 @@ section::before {
 
 /* About Me */
 
-.about-me-header {
+.about-me {
     padding: 15px 0 0 0;
+    isolation: isolate;
+    
+}
+.about-me > h1 {
     font-size: 30px;
     text-align: center;
     line-height: 5px;
@@ -130,6 +140,7 @@ section::before {
 
 .about-me > button {
     padding: 15px;
+
     font-size: 20px;
     line-height: 15px;
 
@@ -139,13 +150,15 @@ section::before {
     border-radius: 5px;
 
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.384);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Bottom */
 
 .end {
     padding: 15px;
+    isolation: isolate;
+
     font-size: 15px;
     text-align: center;
     line-height: 25px;
